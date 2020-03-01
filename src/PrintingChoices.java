@@ -15,5 +15,5 @@ public class PrintingChoices {
         System.out.println();
         System.out.println( "This" + " " + "is" + " " + "a" + " " + "test.");
         System.out.println("I am" + " " + "learning" + " " + "Java the Hard" + " " + "Way!" );
-    }
+    }  //After adding a block comment in the line 13, it won't compiles
 }
