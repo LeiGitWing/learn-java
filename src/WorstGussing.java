@@ -1,17 +1,20 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class WorstGussing {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
-        int guessingNumber = 6;
+        Random randomNumber = new Random();
+        int guessingNumber = randomNumber.nextInt(10) + 1;
         String response;
 
-        System.out.print("TEH WORST NUMBER GESSING GAME EVAR!!!!!!\nI'M THKING OF A NBR FROM 1-10. TRY 2 GESS! ");
+        // System.out.print("TEH WORST NUMBER GESSING GAME EVAR!!!!!!\nI'M THKING OF A NBR FROM 1-10. TRY 2 GESS! ");
+        System.out.print("I'm thinking of a number from 1 to 10.\nYour guess: ");
         int number = keyboard.nextInt();
         if (number != guessingNumber) {
-            response = "\nWOOT! U SUXOR!!! I PWN 00!!! IT WAS " + guessingNumber + "!";
+            response = "\nSorry, but I was really thinking of " + guessingNumber + ".";
         } else {
-            response = "\nLOL!!! U GOT IT! I CANT BELEIVE U GESSED IT WAS " + guessingNumber + "!";
+            response = "\nThat's right! My secret number was " + guessingNumber + "!";
         }
         System.out.println(response);
     }
