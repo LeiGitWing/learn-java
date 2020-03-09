@@ -9,15 +9,23 @@ public class WorstGussing {
         String response;
 
         // System.out.print("TEH WORST NUMBER GESSING GAME EVAR!!!!!!\nI'M THKING OF A NBR FROM 1-10. TRY 2 GESS! ");
+        // openning marks
         System.out.print("I have chosen a number between 1 to 10. Try to guess it.\nYour guess: ");
         int number = keyboard.nextInt();
         int tries = 1;
-        while (number != guessingNumber) {
-            tries++;
-            // response = "\nSorry, but I was really thinking of " + guessingNumber + ".";
+
+        do {
             System.out.print("That is incorrect. Guess again.\nYour guess: ");
             number = keyboard.nextInt();
-        } 
+            tries++;
+        } while (number != guessingNumber);
+
+        // while (number != guessingNumber) {
+        //     tries++;
+        //     // response = "\nSorry, but I was really thinking of " + guessingNumber + ".";
+        //     System.out.print("That is incorrect. Guess again.\nYour guess: ");
+        //     number = keyboard.nextInt();
+        // } 
 
         response = "\nThat's right! You're a good guesser.";
         
