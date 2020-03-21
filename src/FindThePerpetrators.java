@@ -1,6 +1,7 @@
 public class FindThePerpetrators {
     public static void main(String[] args) {
         String[] persons = { "A", "B", "C", "D", "E", "F" };  
+        // 时间复杂度是O(n^2), 空间复杂度是O(n)
         // i < 2^6  手算发现最后的犯人是ABCF
         for (int i = 0; i < 64; i++) {    
             // t是什么? 为什么要用到t?
