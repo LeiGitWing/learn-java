@@ -56,5 +56,4 @@ public class BacktrackingForEightQueens {
         BacktrackingForEightQueens solution = new BacktrackingForEightQueens();
         solution.putQueen(0);
     }
-
 }
