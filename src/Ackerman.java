@@ -5,10 +5,10 @@ public class Ackerman {
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Please input a number: ");
         int m = keyboard.nextInt();
-        System.out.print("Pleasse input another number: ");
+        System.out.print("Please input another number: ");
         int n = keyboard.nextInt();
 
-        System.out.println("Ackerman(" + m + ", " + n + ") is " + ackerman(m, n));
+        System.out.println("Ackerman(" + m + ", " + n + ") is " + ack(m, n));
     }
 
 
@@ -44,7 +44,7 @@ public class Ackerman {
             //    val[j] = A(j, ind[j])
             // 所以当ind[j-1] = 1, 如果有ind[j] = 0, 可求val[j] = val[j-1]
             for(int j = 1; j <= m; j++) {
-                if (nd[j-1] == 1) {
+                if (ind[j-1] == 1) {
                     val[j] = val[j-1];
                     ind[j] = 0;
                 }
